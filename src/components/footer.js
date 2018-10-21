@@ -36,7 +36,7 @@ const Footer = () => (
             <address className="addr">
               The Smartest Way to make Phone Calls!
               <br />
-              <a href="contact.html">Contact us!</a>
+              <a href="/contact">Contact us!</a>
             </address>
           </section>
         </div>

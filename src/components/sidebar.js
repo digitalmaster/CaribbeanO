@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const Sidebar = () => (
   <aside id="sidebar" className="positionright four columns omega">
@@ -21,7 +22,7 @@ const Sidebar = () => (
         <h2 className="widget-title">Usefull Links</h2>
         <ul>
           <li>
-            <a href="support.html">Technical Support</a>
+            <Link to="support">Technical Support</Link>
           </li>
         </ul>
       </li>

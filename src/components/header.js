@@ -23,7 +23,7 @@ class Header extends React.Component {
         <div className="container">
           <header id="top" className="twelve columns">
             <div id="logo" className="three columns alpha">
-              <a href="home.html">
+              <a href="/">
                 <img src={Logo} alt="Logo" />
               </a>
             </div>
