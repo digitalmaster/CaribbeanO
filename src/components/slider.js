@@ -1,5 +1,6 @@
 /* global jQuery */
 import React from "react";
+import { Link } from "gatsby";
 
 import slide1 from "../images/main_1.jpg";
 import slide2 from "../images/main_2.jpg";
@@ -32,9 +33,9 @@ class Slider extends React.Component {
                       The Smart Way to make phone calls!
                     </h1>
                     <p>Let us show you why this is the smartest way to make phone calls.</p>
-                    <a href="about.html" className="button">
+                    <Link to="about" className="button">
                       Learn more
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
@@ -44,9 +45,9 @@ class Slider extends React.Component {
                     <p>
                       We have plans for just about everyone, regardless to where you love to call.
                     </p>
-                    <a href="plans.html" className="button">
+                    <Link to="plans" className="button">
                       Our Plans
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>

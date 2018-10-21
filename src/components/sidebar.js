@@ -7,12 +7,10 @@ const Sidebar = () => (
         <h2 className="widget-title">Usefull Documents</h2>
         <ul>
           <li>
-            <a href="http://www.caribbeano.com/vlservicecodes.pdf">Dial Codes</a>
+            <a href="/vlservicecodes.pdf">Dial Codes</a>
           </li>
           <li>
-            <a href="http://www.caribbeano.com/voicelinelocalaccessnumbers.pdf">
-              Calling Card Features
-            </a>
+            <a href="/voicelinelocalaccessnumbers.pdf">Calling Card Features</a>
           </li>
         </ul>
       </li>

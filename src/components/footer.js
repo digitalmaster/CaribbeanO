@@ -47,8 +47,9 @@ const Footer = () => (
       <div className="container">
         <div id="footercontainer" className="twelve columns">
           <footer id="footer">
-            Copyright &copy;2004-2012 CaribbeanO. All Rights Reserved.{" "}
-            <a href="http://www.josebrowne.com" target="_blank">
+            Copyright &copy;{" "}
+            {`2004-${new Date().getFullYear()} CaribbeanO. All Rights Reserved.${" "}`}
+            <a href="http://www.josebrowne.com" target="_blank" rel="noopener noreferrer">
               Web-Developer
             </a>
           </footer>
