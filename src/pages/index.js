@@ -1,12 +1,12 @@
 import React from "react";
 
-import HomeLayout from "../layouts/home";
+import Main from "../layouts/main";
 
 import VoicelineBox from "../images/products/innomedia.jpg";
 
 const Home = props => {
   return (
-    <HomeLayout>
+    <Main layoutType="home" {...props}>
       <h2 className="smallmargin">Welcome to CaribbeanO.com!</h2>
       <h3 className="customcolor">
         Are you tired of paying too much for phone calls? Poor service from providers? Not being
@@ -36,7 +36,7 @@ const Home = props => {
         extension only calling between remote locations anywhere in the world. Your London office is
         just a 3 digit "internal extension" call away.
       </p>
-    </HomeLayout>
+    </Main>
   );
 };
 

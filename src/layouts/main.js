@@ -1,4 +1,3 @@
-/* global jQuery */
 import React from "react";
 import Helmet from "react-helmet";
 
@@ -6,6 +5,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Slider from "../components/slider";
 import Sidebar from "../components/sidebar";
+import ContentHeader from "../components/contentHeader";
 
 import "../styles/skeleton.css";
 import "../styles/style.css";
@@ -28,36 +28,13 @@ import "../js/fade.js";
 import "../js/tinynav.min.js";
 import "../js/custom.js";
 
-// Prevent running on build
-if (typeof window !== "undefined") {
-  jQuery(window).load(function() {
-    jQuery(".flexslider").flexslider({
-      animation: "slide",
-      slideDirection: "vertical",
-      directionNav: false,
-      controlNav: true
-    });
-  });
-}
-
-// const jsScrtips = [
-//   "/js/jquery-1.6.4.min.js",
-//   "/js/hoverIntent.js",
-//   "/js/superfish.js",
-//   "/js/supersubs.js",
-//   "/js/jquery.flexslider-min.js",
-//   "/js/jquery.prettyPhoto.js",
-//   "/js/fade.js",
-//   "/js/tinynav.min.js",
-//   "/js/custom.js"
-// ];
-
-const Template = ({ children: content }) => {
+const Layout = ({ children: content, layoutType, title, subTitle, location }) => {
   return (
     <>
       <div id="bodychild">
         <Helmet>
-          <meta name="description" content="The SMART way to make phone calls!" />
+          <title>{title}</title>
+          <meta name="description" content={subTitle} />
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
           <link rel="shortcut icon" href="images/favicon.ico" />
           <link rel="apple-touch-icon" href={AppleTouchIconS} />
@@ -65,8 +42,13 @@ const Template = ({ children: content }) => {
           <link rel="apple-touch-icon" sizes="114x114" href={AppleTouchIconL} />
         </Helmet>
         <div id="outercontainer">
-          <Header />
-          <Slider />
+          <Header location={location} />
+
+          {layoutType === "home" ? (
+            <Slider location={location} />
+          ) : (
+            <ContentHeader title={title} subTitle={subTitle} />
+          )}
 
           {/* Main Content */}
           <div id="outermain">
@@ -91,4 +73,4 @@ const Template = ({ children: content }) => {
   );
 };
 
-export default Template;
+export default Layout;
