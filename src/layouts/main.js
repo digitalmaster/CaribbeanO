@@ -33,7 +33,7 @@ const Layout = ({ children: content, layoutType, title, subTitle, location }) =>
     <>
       <div id="bodychild">
         <Helmet>
-          <title>{title}</title>
+          <title>{`${title} | CaribbeanO.com`}</title>
           <meta name="description" content={subTitle} />
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
           <link rel="shortcut icon" href="images/favicon.ico" />

@@ -44,6 +44,9 @@ class Header extends React.Component {
                   <li className={isActive("/about", currentPage)}>
                     <Link to="/about">About Us</Link>
                   </li>
+                  <li className={isActive("/rates", currentPage)}>
+                    <Link to="/rates">Rates</Link>
+                  </li>
                 </ul>
               </nav>
               <div className="clear" />

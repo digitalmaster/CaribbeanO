@@ -6,7 +6,7 @@ import VoicelineBox from "../images/products/innomedia.jpg";
 
 const Home = props => {
   return (
-    <Main layoutType="home" {...props}>
+    <Main title="Home" subTitle="Welcome to Caribbeano.com" layoutType="home" {...props}>
       <h2 className="smallmargin">Welcome to CaribbeanO.com!</h2>
       <h3 className="customcolor">
         Are you tired of paying too much for phone calls? Poor service from providers? Not being
