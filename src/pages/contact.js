@@ -4,7 +4,7 @@ import Main from "../layouts/main";
 
 export default function(props) {
   return (
-    <Main title="About Us" subTitle="Learn more about CaribbeanO" {...props}>
+    <Main title="Contact Us" subTitle="We're here to help!" {...props}>
       <h3>Information</h3>
       <p>To contact us please use one of the following methods:</p>
       <h3>Email Us:</h3>
