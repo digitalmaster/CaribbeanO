@@ -34,7 +34,7 @@ export default function(props) {
         <br /> Start by choosing the calling plan thats right for you...
       </p>
       <h2>Calling Plans:</h2>
-      <table width="100%" border="0" cellspacing="1" cellpadding="3">
+      <table width="100%" border="0" cellSpacing="1" cellPadding="3">
         <tbody>
           <tr>
             <th width="36%">Plan Name</th>
